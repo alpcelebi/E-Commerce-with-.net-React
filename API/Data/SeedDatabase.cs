@@ -28,8 +28,8 @@ public static class SeedDatabase
 
     if (!userManager.Users.Any())
     {
-        var customer=new AppUser{Name="Yagiz Alp",UserName="yagizalp",Email="yagizalpcelebi@gmail.com"};
-        var admin=new AppUser{Name="Alp Eren",UserName="alpadmin",Email="patricjaneleon@gmail.com"};
+        var customer=new AppUser{};
+        var admin=new AppUser{};
 
 
         await userManager.CreateAsync(customer,"Customer_123");
